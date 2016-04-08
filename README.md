@@ -19,9 +19,8 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Native scrolling for hybrid apps, 
 - Material design, 
 - Over 900 icons and much more! 
-- Ionic native plugins for access to the user's device and hardware. Anything you can access with a native app you will be able to   access with ionic native. 
-- Webpack, SASS (CSS Preprocessor), CommonJS and a new module loader out of the box. No longer using bower,
-- 
+- Ionic native plugins for access to the user's device and hardware.
+- Webpack, SASS (CSS Preprocessor), CommonJS and a new module loader out of the box. No longer using bower
 
 # Features
 
