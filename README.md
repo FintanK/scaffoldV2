@@ -4,16 +4,32 @@ The web changes a lot in a year!
 
 **Note:** Angular 2 is in Beta right now. Things can and probably will be refactored later.
 
-Scaffold V2 is re-written to use Angular 2 and it's typescript approach as well as harnessing Ionic 2 (updated design changes, ) to accomodate the growing trend of hybrid app development. The project aims to follow best practices in frontend web development with a component based approach, comprehensive testing (Unit and Behavioural). The optimization of frontend assets through the proven techniques of concatentation. minification and compression. Configurations are also included to allow you to easily set up a docker container and provision all of your necessary dependencies. It will also aim to maintain and expand upon many of the techniques used in V1. 
+Scaffold V2 is completely re-written from the ground up to use Angular 2 and it's typescript approach as well as harnessing Ionic 2.
+The project aims to follow best practices in frontend web development with a component based approach, comprehensive testing (Unit and Behavioural). The optimization of frontend assets through the proven techniques of concatentation. minification and compression. Configurations are also included to allow you to easily set up a docker container and provision all of your necessary dependencies. It will also aim to maintain and expand upon many of the techniques used in V1. 
 
 This project will be published as an NPM module and Yeoman generator to allow for modularity and reusability. The generator will contain options for customizing the architecture of your application.
 
+# Ionic 2
+
+- Hybrid app development
+- Updated design changes 
+- No router required but still works with the router component from Angular, 
+- Lots of customizable components developed for cross platform compatibility, 
+- Completely modular styles, 
+- Native scrolling for hybrid apps, 
+- Material design, 
+- Over 900 icons and much more! 
+- Ionic native plugins for access to the user's device and hardware. Anything you can access with a native app you will be able to   access with ionic native. 
+- Webpack, SASS (CSS Preprocessor), CommonJS and a new module loader out of the box. No longer using bower,
+- 
+
 # Features
+
 - Angular 2 https://angular.io
-- Typescript http://www.typescriptlang.org/ (Compiles to ES5/ES6 Javascript) (BTW Typescript is not required for Angular. I just chose it for this implementation)
+- Typescript http://www.typescriptlang.org/ (Compiles to ES5/ES6 Javascript)
+- Hybrid app development with Ionic 2. Package your web app easily for Android and IOS.
 - Gulp task runner http://gulpjs.com/
 - Nodemon for file monitoring http://nodemon.io/
-- JSPM for package management http://jspm.io/
 - Docker configurations so you can spin up a container for this project easily (runDocker.sh script to automate the process)
 - Karma Test Runner https://karma-runner.github.io/0.13/index.html
 - Functional / Behavioural Tests
@@ -31,7 +47,6 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Native notification when builds are completed.
 - Builds run against pagespeed for feedback on app performance
 - Favicons, IOS splash / homescreen icons, Android icons and Windows 8 Tile Icons auto-generated.
-- Hybrid app development with Ionic 2. Package your web app easily for Android and IOS.
 - Manifest.json generated automatically.
 - System.js for module loading
 - Build jobs to allow you to test on different devices in the cloud
@@ -51,6 +66,10 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - HTML Imports!
 - ES6!
 
+# Directory structure
+
+> coming soon
+
 # Config files
 
 > Coming soon
@@ -58,7 +77,6 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 # Installation
 
 > coming soon
-
 
 # Command Line Tools
 
@@ -76,6 +94,7 @@ http://yeoman.io/authoring/
 http://code.tutsplus.com/tutorials/build-your-own-yeoman-generator--cms-20040
 http://lab.ionic.io/
 http://www.gajotres.net/ionic-2-tutorial-lets-create-our-first-application/
+http://ionic.io/products/creator
 
 ![](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/ANGULAR%202.png)
 ![](http://ionicframework.com/img/ionic-logo-blue.svg)
