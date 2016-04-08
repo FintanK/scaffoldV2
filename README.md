@@ -2,9 +2,11 @@
 
 The web changes a lot in a year! 
 
-Scaffold V2 is re-written to use Angular 2 and it's typescript approach as well as harnessing Ionic 2 to accomodate the growing trend of hybrid app development. The project aims to follow best practices in frontend web development with a component based approach, comprehensive testing (Unit and Behavioural). The optimization of frontend assets through the proven techniques of concatentation. minification and compression. Configurations are also included to allow you to easily set up a docker container and provision all of your necessary dependencies. It will also aim to maintain and expand upon many of the techniques used in V1. 
+**Note:** Angular 2 is in Beta right now. Things can and probably will be refactored later.
 
-This project will be published as an NPM module and Yeoman generator to allow for modularity and reusability.
+Scaffold V2 is re-written to use Angular 2 and it's typescript approach as well as harnessing Ionic 2 (updated design changes, ) to accomodate the growing trend of hybrid app development. The project aims to follow best practices in frontend web development with a component based approach, comprehensive testing (Unit and Behavioural). The optimization of frontend assets through the proven techniques of concatentation. minification and compression. Configurations are also included to allow you to easily set up a docker container and provision all of your necessary dependencies. It will also aim to maintain and expand upon many of the techniques used in V1. 
+
+This project will be published as an NPM module and Yeoman generator to allow for modularity and reusability. The generator will contain options for customizing the architecture of your application.
 
 # Features
 - Angular 2 https://angular.io
@@ -37,18 +39,17 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Phonegap build task.
 
 # What i'm excited about
-- Angular 2!
-- Ionic 2!
-- Docker!
-- Phonegap build!
-- Builds using Travis!
-- Heroku deployments!
-- Typescript!
+- Angular 2! Improved and intuitive templating with better code completion in your IDE.  
+- Ionic 2! Build apps for Android and IOS with web technologies.
+- Docker! Spin up a container quickly. Use for development or quick deployments.
+- Phonegap build! Take the hassle out of packaging your app for the Google Play and/or the IOS app store.
+- Builds using Travis! Automate builds and tests for every change ensuring code quality into the future.
+- Heroku deployments! Deploy to production easily as part of your pipeline.
+- Typescript! OPTIONAL. Variable types in Javascript. Find and handle errors faster.  
 - Web Components!
 - Shadow DOM!
 - HTML Imports!
 - ES6!
-- Redux!
 
 # Config files
 
