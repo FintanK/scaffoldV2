@@ -13,15 +13,18 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 
 - Hybrid app development
 - Updated design changes 
-- Simplicity using a component model
+- Simplicity using a component model 
+- Great choice of components 
 - No router required but still works with the router component from Angular, 
 - Lots of customizable components developed for cross platform compatibility, 
 - Completely modular styles, 
 - Native scrolling for hybrid apps, 
 - Material design, 
 - Over 900 icons and much more! 
-- Ionic native plugins for access to the user's device and hardware.
-- Webpack, SASS (CSS Preprocessor), CommonJS and a new module loader out of the box. No longer using bower
+- Ionic native plugins for access to the user's device and hardware. GPS, Bluetooth, Camera, NFC etc.
+- Webpack, SASS (CSS Preprocessor), CommonJS and a new module loader out of the box. No longer using bower.
+- Web animations API! https://w3c.github.io/web-animations/
+- Ionic CLI
 
 # Features
 
@@ -56,6 +59,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 # What i'm excited about
 - Angular 2! Improved and intuitive templating with better code completion in your IDE.  
 - Ionic 2! Build apps for Android and IOS with web technologies.
+- Ionic Native! Only add the components you need.
 - Docker! Spin up a container quickly. Use for development or quick deployments.
 - Phonegap build! Take the hassle out of packaging your app for the Google Play and/or the IOS app store.
 - Builds using Travis! Automate builds and tests for every change ensuring code quality into the future.
@@ -101,4 +105,3 @@ http://ionic.io/products/creator
 ![](https://raw.githubusercontent.com/micromata/generator-bootstrap-kickstart/master/yeoman.png)
 ![](https://www.npmjs.com/static/images/npm-logo.svg)
 ![](https://res.cloudinary.com/angularclass/image/upload/v1431925418/webpackAndangular2_dwhus9.png)
-
