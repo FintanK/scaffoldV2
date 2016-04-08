@@ -79,6 +79,7 @@ http://lab.ionic.io/
 http://www.gajotres.net/ionic-2-tutorial-lets-create-our-first-application/
 
 ![](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/ANGULAR%202.png)
+![](http://ionicframework.com/img/ionic-logo-blue.svg)
 ![](https://raw.githubusercontent.com/micromata/generator-bootstrap-kickstart/master/yeoman.png)
 ![](https://www.npmjs.com/static/images/npm-logo.svg)
 ![](http://www.webdesignermag.co.uk/wp-content/uploads/2014/09/Speed-up-your-workflow-with-a-Gulp-plugin.png)
