@@ -1,4 +1,4 @@
-# Scaffold JS
+# Scaffold JS 2.0 (Work in progress)
 
 The web changes a lot in a year!
 
