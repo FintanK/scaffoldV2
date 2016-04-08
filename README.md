@@ -33,21 +33,21 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 
 # Features
 
-- Angular 2 https://angular.io
-- Ionic 2 hybrid app development. Package your web app easily for Android and IOS.
-- Gulp
+- Angular 2 https://angular.io ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- Ionic 2 hybrid app development. Package your web app easily for Android and IOS. ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- Gulp ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Nodemon for file monitoring http://nodemon.io/
 - Docker configurations so you can spin up a container for this project easily (runDocker.sh script to automate the process)
 - Karma Test Runner https://karma-runner.github.io/0.13/index.html
 - Functional / Behavioural Tests
 - CSS lint
 - JSHint http://jshint.com/
-- Travis configurations to automate and test builds before deployment
-- Editorconfig for code styling http://editorconfig.org/
+- Travis configurations to automate and test builds before deployment ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- Editorconfig for code styling http://editorconfig.org/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Auto generated manifest file
 - Asset concatenation and minification
 - HTML minification for production builds if required. Squeeze every last Kb out of your app.
-- SASS http://sass-lang.com/
+- SASS http://sass-lang.com/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Further compression of assets using express in gzip format
 - Development and production builds with a watcher to kick off builds when changes are made in development
 - Native notification when builds are completed.
