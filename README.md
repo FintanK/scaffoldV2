@@ -26,7 +26,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Material design
 - Over 900 icons and much more!
 - Ionic native plugins for access to the user's device and hardware. GPS, Bluetooth, Camera, NFC etc.
-- Webpack, SASS (CSS Preprocessor), CommonJS and a new module loader out of the box. No longer using bower.
+- Gulp, SASS (CSS Preprocessor), CommonJS and a new module loader out of the box. No longer using bower.
 - Web animations API! https://w3c.github.io/web-animations/
 - Ionic CLI
 
@@ -35,7 +35,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 
 - Angular 2 https://angular.io
 - Ionic 2 hybrid app development. Package your web app easily for Android and IOS.
-- Webpack
+- Gulp
 - Nodemon for file monitoring http://nodemon.io/
 - Docker configurations so you can spin up a container for this project easily (runDocker.sh script to automate the process)
 - Karma Test Runner https://karma-runner.github.io/0.13/index.html
@@ -106,4 +106,3 @@ http://ionic.io/products/creator
 ![](http://ionicframework.com/img/ionic-logo-blue.svg)
 ![](https://raw.githubusercontent.com/micromata/generator-bootstrap-kickstart/master/yeoman.png)
 ![](https://www.npmjs.com/static/images/npm-logo.svg)
-![](https://res.cloudinary.com/angularclass/image/upload/v1431925418/webpackAndangular2_dwhus9.png)
