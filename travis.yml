@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "5.1"
+before_install:
+  -  gem install sass
+  -  npm cache -f clean
+  -  npm install
+install:
+before_script:

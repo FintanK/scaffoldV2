@@ -1,10 +1,10 @@
 # Scaffold JS
 
-The web changes a lot in a year! 
+The web changes a lot in a year!
 
 **Note:** Angular 2 is in Beta right now. Things can and probably will be refactored later.
 
-Scaffold V2 is completely re-written from the ground up to use Angular 2 and it's typescript approach as well as harnessing Ionic 2.
+Scaffold V2 is completely re-written from the ground up to use Angular 2 as well as harnessing Ionic 2.
 The project aims to follow best practices in frontend web development with a component based approach, comprehensive testing (Unit and Behavioural) and the optimization of frontend assets through the proven techniques of concatentation. minification and compression.
 
 There will be automated processes to ensure that your project's data is as contextual as possible both in the domain of semantic markup and data as well as platform integration out of the box. The web isn't just in the browser anymore.
@@ -16,15 +16,15 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 # Ionic 2 http://ionicframework.com/docs/v2/
 
 - Hybrid app development
-- Updated design changes 
-- Simplicity using a component model 
-- Great choice of components 
-- No router required but still works with the router component from Angular, 
-- Lots of customizable components developed for cross platform compatibility, 
-- Completely modular styles, 
-- Native scrolling for hybrid apps, 
-- Material design, 
-- Over 900 icons and much more! 
+- Updated design changes
+- Simplicity using a component model
+- Great choice of components
+- No router required but still works with the router component from Angular,
+- Lots of customizable components developed for cross platform compatibility,
+- Completely modular styles.
+- Native scrolling for hybrid apps,
+- Material design
+- Over 900 icons and much more!
 - Ionic native plugins for access to the user's device and hardware. GPS, Bluetooth, Camera, NFC etc.
 - Webpack, SASS (CSS Preprocessor), CommonJS and a new module loader out of the box. No longer using bower.
 - Web animations API! https://w3c.github.io/web-animations/
@@ -34,7 +34,6 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 # Features
 
 - Angular 2 https://angular.io
-- Typescript http://www.typescriptlang.org/ (Compiles to ES5/ES6 Javascript)
 - Ionic 2 hybrid app development. Package your web app easily for Android and IOS.
 - Webpack
 - Nodemon for file monitoring http://nodemon.io/
@@ -43,7 +42,6 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Functional / Behavioural Tests
 - CSS lint
 - JSHint http://jshint.com/
-- TSLint tslint
 - Travis configurations to automate and test builds before deployment
 - Editorconfig for code styling http://editorconfig.org/
 - Auto generated manifest file
@@ -62,14 +60,13 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Phonegap build task.
 
 # What i'm excited about
-- Angular 2! Improved and intuitive templating with better code completion in your IDE.  
+- Angular 2! Improved and intuitive templating with better code completion in your IDE.
 - Ionic 2! Build apps for Android and IOS with web technologies.
 - Ionic Native! Only add the components you need.
 - Docker! Spin up a container quickly. Use for development or quick deployments.
 - Phonegap build! Take the hassle out of packaging your app for the Google Play and/or the IOS app store.
 - Builds using Travis! Automate builds and tests for every change ensuring code quality into the future.
 - Heroku deployments! Deploy to production easily as part of your pipeline.
-- Typescript! OPTIONAL. Variable types in Javascript. Find and handle errors faster.  
 - Web Components!
 - Shadow DOM!
 - HTML Imports!
