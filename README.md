@@ -2,17 +2,6 @@
 
 Version 2 of Scaffold [WIP]
 
-# Why choose Angular?
-
-I would encourage all developers to do their own research before choosing a framework but these are some of my own reasons.
-
-- Latest Web Standards
-- Cross Platform
-- Full framework not just view logic
-- Legacy browser support
-- Performance
-- It's what the cool kids are using ;)
-
 # Features
 - Angular 2 https://angular.io
 - Typescript http://www.typescriptlang.org/ (Compiles to ES5/ES6 Javascript) (BTW Typescript is not required for Angular. I just chose it for this implementation)
@@ -38,7 +27,7 @@ I would encourage all developers to do their own research before choosing a fram
 - Native notification when builds are completed.
 - Builds run against pagespeed for feedback on app performance
 - Favicons, IOS splash / homescreen icons, Android icons and Windows 8 Tile Icons auto-generated.
-- Ionic for Hybrid app development and phonegap build to automate builds for Android and IOS.
+- Hybrid app development with Ionic 2. Package your web app easily for Android and IOS.
 - Manifest.json generated automatically.
 - System.js for module loading
 - Build jobs to allow you to test on different devices in the cloud
