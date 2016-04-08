@@ -10,10 +10,8 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Angular 2 https://angular.io
 - Typescript http://www.typescriptlang.org/ (Compiles to ES5/ES6 Javascript) (BTW Typescript is not required for Angular. I just chose it for this implementation)
 - Gulp task runner http://gulpjs.com/
-- Babel JS Transpiler https://babeljs.io/
 - Nodemon for file monitoring http://nodemon.io/
 - JSPM for package management http://jspm.io/
-- Normalize.css. https://www.npmjs.com/package/normalize.css CSS Reset
 - Docker configurations so you can spin up a container for this project easily (runDocker.sh script to automate the process)
 - Karma Test Runner https://karma-runner.github.io/0.13/index.html
 - Functional / Behavioural Tests
@@ -83,5 +81,4 @@ http://www.gajotres.net/ionic-2-tutorial-lets-create-our-first-application/
 ![](https://raw.githubusercontent.com/micromata/generator-bootstrap-kickstart/master/yeoman.png)
 ![](https://www.npmjs.com/static/images/npm-logo.svg)
 ![](http://www.webdesignermag.co.uk/wp-content/uploads/2014/09/Speed-up-your-workflow-with-a-Gulp-plugin.png)
-![](https://raw.githubusercontent.com/babel/logo/master/babel.png)
 
