@@ -9,10 +9,11 @@ The project aims to follow best practices in frontend web development with a com
 
 This project will be published as an NPM module and Yeoman generator to allow for modularity and reusability. The generator will contain options for customizing the architecture of your application.
 
-# Ionic 2
+# Ionic 2 http://ionicframework.com/docs/v2/
 
 - Hybrid app development
 - Updated design changes 
+- Simplicity using a component model
 - No router required but still works with the router component from Angular, 
 - Lots of customizable components developed for cross platform compatibility, 
 - Completely modular styles, 
@@ -26,7 +27,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 
 - Angular 2 https://angular.io
 - Typescript http://www.typescriptlang.org/ (Compiles to ES5/ES6 Javascript)
-- Hybrid app development with Ionic 2. Package your web app easily for Android and IOS.
+- Ionic 2 hybrid app development. Package your web app easily for Android and IOS.
 - Gulp task runner http://gulpjs.com/
 - Nodemon for file monitoring http://nodemon.io/
 - Docker configurations so you can spin up a container for this project easily (runDocker.sh script to automate the process)
