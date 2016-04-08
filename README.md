@@ -28,7 +28,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Angular 2 https://angular.io
 - Typescript http://www.typescriptlang.org/ (Compiles to ES5/ES6 Javascript)
 - Ionic 2 hybrid app development. Package your web app easily for Android and IOS.
-- Gulp task runner http://gulpjs.com/
+- Webpack
 - Nodemon for file monitoring http://nodemon.io/
 - Docker configurations so you can spin up a container for this project easily (runDocker.sh script to automate the process)
 - Karma Test Runner https://karma-runner.github.io/0.13/index.html
@@ -100,5 +100,5 @@ http://ionic.io/products/creator
 ![](http://ionicframework.com/img/ionic-logo-blue.svg)
 ![](https://raw.githubusercontent.com/micromata/generator-bootstrap-kickstart/master/yeoman.png)
 ![](https://www.npmjs.com/static/images/npm-logo.svg)
-![](http://www.webdesignermag.co.uk/wp-content/uploads/2014/09/Speed-up-your-workflow-with-a-Gulp-plugin.png)
+![](https://res.cloudinary.com/angularclass/image/upload/v1431925418/webpackAndangular2_dwhus9.png)
 
