@@ -1,6 +1,10 @@
 # Scaffold JS
 
-Version 2 of Scaffold [WIP]
+The web changes a lot in a year! 
+
+Scaffold V2 is re-written to use Angular 2 and it's typescript approach as well as harnessing Ionic 2 to accomodate the growing trend of hybrid app development. The project aims to follow best practices in frontend web development with a component based approach, comprehensive testing (Unit and Behavioural). The optimization of frontend assets through the proven techniques of concatentation. minification and compression. Configurations are also included to allow you to easily set up a docker container and provision all of your necessary dependencies. It will also aim to maintain and expand upon many of the techniques used in V1. 
+
+This project will be published as an NPM module and Yeoman generator to allow for modularity and reusability.
 
 # Features
 - Angular 2 https://angular.io
@@ -36,6 +40,11 @@ Version 2 of Scaffold [WIP]
 
 # What i'm excited about
 - Angular 2!
+- Ionic 2!
+- Docker!
+- Phonegap build!
+- Builds using Travis!
+- Heroku deployments!
 - Typescript!
 - Web Components!
 - Shadow DOM!
@@ -44,53 +53,30 @@ Version 2 of Scaffold [WIP]
 - Redux!
 
 # Config files
-- Coming soon
+
+> Coming soon
 
 # Installation
-
-Prerequisistes
-
-Node
-NPM
-
-> npm install -g typescript
-> npm install -g typings
-> npm install -g gulp
-
-In the root directory..
 
 > coming soon
 
 
-# New dependencies / packages
-
-Use JSPM via the command line for new dependencies
-
-    jspm install x
-
-
 # Command Line Tools
 
-- Gulp
-- JSPM
-
-# Notes:
-- Will be published as a Yeoman generator and NPM module.
-- Will incorporate all of the build logic previously maintained.
-- Different tasks via gulp for ionic projects / electron projects.
-- CHANGELOG.MD
+> coming soon
 
 # License
 
 This source code has a MIT License.
 
-# Reading Material
+# Further potential and reading Material
 https://developer.lge.com/webOSTV/develop/web-app/getting-started/building-your-first-web-app-webos-tv/
 https://developer.mozilla.org/en-US/Marketplace/Options/Packaged_apps
 https://developer.chrome.com/apps/about_apps
 http://yeoman.io/authoring/
 http://code.tutsplus.com/tutorials/build-your-own-yeoman-generator--cms-20040
 http://lab.ionic.io/
+http://www.gajotres.net/ionic-2-tutorial-lets-create-our-first-application/
 
 ![](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/ANGULAR%202.png)
 ![](https://raw.githubusercontent.com/micromata/generator-bootstrap-kickstart/master/yeoman.png)
