@@ -59,7 +59,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Heroku deployments configuration
 - Phonegap build task.
 
-# What i'm excited about
+# What I'm excited about
 - Angular 2! Improved and intuitive templating with better code completion in your IDE.
 - Ionic 2! Build apps for Android and IOS with web technologies.
 - Ionic Native! Only add the components you need.
