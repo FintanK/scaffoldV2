@@ -7,10 +7,10 @@ var gulp = require('gulp'),
 var Comb = require('csscomb');
 var comb = new Comb('zen');
 
-var notify = require("gulp-notify");
-
-
-
+// Notifier module
+var notifier = require('node-notifier');
+// Path to pull in icon for notifcation
+var path = require('path');
 
 /**
  * Ionic hooks
@@ -40,7 +40,6 @@ var copyHTML = require('ionic-gulp-html-copy');
 var copyFonts = require('ionic-gulp-fonts-copy');
 var copyScripts = require('ionic-gulp-scripts-copy');
 
-
 gulp.task('csscomb', function(){
   comb.processPath('www/build/css');
 });
@@ -62,7 +61,16 @@ gulp.task('build', ['clean'], function(done){
     function(){
 
       buildBrowserify().on('end', function(){
-         notify("Gulp Build Complete!");
+        // Notify me!
+        notifier.notify({
+          title: 'Scaffold',
+          message: 'Build complete!',
+          icon: path.join(__dirname, 'www/img/favicon.ico'), // Absolute path (doesn't work on balloons)
+          sound: true, // Only Notification Center or Windows Toasters
+          wait: true // Wait with callback, until user action is taken against notification
+        }, function (err, response) {
+          // Response is response from notification
+        });
       });
     }
   );

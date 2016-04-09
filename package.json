@@ -9,6 +9,7 @@
     "ionic-angular": "2.0.0-beta.4",
     "ionic-native": "^1.1.0",
     "ionicons": "3.0.0-alpha.3",
+    "node-notifier": "^4.5.0",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
     "zone.js": "0.6.6"
@@ -19,7 +20,6 @@
     "babelify": "7.2.0",
     "del": "2.2.0",
     "gulp": "3.9.1",
-    "gulp-notify": "^2.2.0",
     "gulp-watch": "4.3.5",
     "ionic-gulp-browserify-es2015": "^1.0.0",
     "ionic-gulp-fonts-copy": "^1.0.0",
