@@ -36,7 +36,9 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Angular 2 https://angular.io ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Ionic 2 hybrid app development. Package your web app easily for Android and IOS. ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Gulp ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
-- Nodemon for file monitoring http://nodemon.io/
+- Livereload http://livereload.com ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- Browserify http://browserify.org ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- CSS Comb http://csscomb.com ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Docker configurations so you can spin up a container for this project easily (runDocker.sh script to automate the process)
 - Karma Test Runner https://karma-runner.github.io/0.13/index.html
 - Functional / Behavioural Tests
