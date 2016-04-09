@@ -7,6 +7,9 @@ var gulp = require('gulp'),
 var Comb = require('csscomb');
 var comb = new Comb('zen');
 
+var notify = require("gulp-notify");
+
+
 
 
 /**
@@ -57,7 +60,10 @@ gulp.task('build', ['clean'], function(done){
   runSequence(
     ['sass', 'html', 'fonts', 'scripts'],
     function(){
-      buildBrowserify().on('end', done);
+
+      buildBrowserify().on('end', function(){
+         notify("Gulp Build Complete!");
+      });
     }
   );
 });

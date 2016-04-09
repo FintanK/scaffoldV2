@@ -19,6 +19,7 @@
     "babelify": "7.2.0",
     "del": "2.2.0",
     "gulp": "3.9.1",
+    "gulp-notify": "^2.2.0",
     "gulp-watch": "4.3.5",
     "ionic-gulp-browserify-es2015": "^1.0.0",
     "ionic-gulp-fonts-copy": "^1.0.0",

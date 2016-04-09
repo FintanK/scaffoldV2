@@ -7807,11 +7807,11 @@ div.feature-desc {
   padding: 20px 0px; }
 
 #welcome {
-  background: url("../img/ticks.png") repeat;
+  background: url("../../img/ticks.png") repeat;
   padding-bottom: 55px; }
 
 #features {
-  background: url("../img/debut_dark.png") repeat;
+  background: url("../../img/debut_dark.png") repeat;
   color: #fff;
   padding: 60px 0px; }
 
@@ -7821,6 +7821,9 @@ div.feature-desc {
 #features h1 {
   font-size: 24px;
   font-weight: bold; }
+
+#features p {
+  color: #fff; }
 
 #footer {
   text-align: center; }
