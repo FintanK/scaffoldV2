@@ -50,7 +50,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - SASS http://sass-lang.com/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Further compression of assets using express in gzip format
 - Development and production builds with a watcher to kick off builds when changes are made in development
-- Native notification when builds are completed.
+- Native notification when builds are completed. ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Builds run against pagespeed for feedback on app performance
 - Favicons, IOS splash / homescreen icons, Android icons and Windows 8 Tile Icons auto-generated.
 - Manifest.json generated automatically.
