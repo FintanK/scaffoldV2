@@ -77,32 +77,32 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 
 # Directory structure
 
-.
-+-- app
-+-- gulp-tasks
-|   +-- css-tasks.js
-|   +-- html-tasks.js
-|   +-- img-tasks.js
-|   +-- js-tasks.js
-|   +-- performance-tasks.js
-+-- hooks
-+-- platforms
-+-- plugins
-+-- resources
-+-- www
-+-- .csscomb.json
-+-- .csslintrc
-+-- .editorconfig
-+-- .gitattributes
-+-- .gitignore
-+-- .npmignore
-+-- .travis.yml
-+-- config.xml
-+-- gulpfile.js
-+-- index.html
-+-- ionic.config.json
-+-- package.json
-+-- README.md
+    .
+    +-- app
+    +-- gulp-tasks
+    |   +-- css-tasks.js
+    |   +-- html-tasks.js
+    |   +-- img-tasks.js
+    |   +-- js-tasks.js
+    |   +-- performance-tasks.js
+    +-- hooks
+    +-- platforms
+    +-- plugins
+    +-- resources
+    +-- www
+    +-- .csscomb.json
+    +-- .csslintrc
+    +-- .editorconfig
+    +-- .gitattributes
+    +-- .gitignore
+    +-- .npmignore
+    +-- .travis.yml
+    +-- config.xml
+    +-- gulpfile.js
+    +-- index.html
+    +-- ionic.config.json
+    +-- package.json
+    +-- README.md
 
 # Installation
 
