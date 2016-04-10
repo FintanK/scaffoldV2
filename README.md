@@ -43,7 +43,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Karma Test Runner https://karma-runner.github.io/0.13/index.html
 - Functional / Behavioural Tests
 - CSS lint
-- JSHint http://jshint.com/
+- JSLint ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Travis configurations to automate and test builds before deployment ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Editorconfig for code styling http://editorconfig.org/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Auto generated manifest file
@@ -60,6 +60,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Build jobs to allow you to test on different devices in the cloud
 - Heroku deployments configuration
 - Phonegap build task.
+- Gulp task listing (just type 'gulp list') ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 
 # What I'm excited about
 - Angular 2! Improved and intuitive templating with better code completion in your IDE.

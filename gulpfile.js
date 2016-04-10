@@ -1,16 +1,23 @@
-var gulp = require('gulp'),
-    gulpWatch = require('gulp-watch'),
-    del = require('del'),
-    runSequence = require('run-sequence'),
-    argv = process.argv;
+var gulp = require('gulp');
 
-var Comb = require('csscomb');
-var comb = new Comb('zen');
+// Lists tasks set up for Gulp
+var taskListing = require('gulp-task-listing');
 
-// Notifier module
+// Watcher for file changes (development)
+var gulpWatch = require('gulp-watch');
+
+var del = require('del');
+var runSequence = require('run-sequence');
+var argv = process.argv;
+
+// Notifier
 var notifier = require('node-notifier');
-// Path to pull in icon for notifcation
+// Path to pull in icon for notifcations
 var path = require('path');
+
+// Load our modular gulp tasks from
+var requireDir = require('require-dir');
+var tasks = requireDir('./gulp-tasks');
 
 /**
  * Ionic hooks
@@ -22,7 +29,7 @@ gulp.task('emulate:before', ['build']);
 gulp.task('deploy:before', ['build']);
 gulp.task('build:before', ['csscomb', 'build']);
 
-// we want to 'watch' when livereloading
+// We want to 'watch' when livereloading
 var shouldWatch = argv.indexOf('-l') > -1 || argv.indexOf('--livereload') > -1;
 gulp.task('run:before', [shouldWatch ? 'watch' : 'build']);
 
@@ -40,14 +47,14 @@ var copyHTML = require('ionic-gulp-html-copy');
 var copyFonts = require('ionic-gulp-fonts-copy');
 var copyScripts = require('ionic-gulp-scripts-copy');
 
-gulp.task('csscomb', function(){
-  comb.processPath('www/build/css');
-});
-
 gulp.task('watch', ['clean'], function(done){
   runSequence(
     ['sass', 'html', 'fonts', 'scripts'],
     function(){
+
+      gulp.start('csscomb');
+      gulp.start('jslint');
+
       gulpWatch('app/**/*.scss', function(){ gulp.start('sass'); });
       gulpWatch('app/**/*.html', function(){ gulp.start('html'); });
       buildBrowserify({ watch: true }).on('end', done);
@@ -59,6 +66,9 @@ gulp.task('build', ['clean'], function(done){
   runSequence(
     ['sass', 'html', 'fonts', 'scripts'],
     function(){
+
+      gulp.start('csscomb');
+      gulp.start('jslint');
 
       buildBrowserify().on('end', function(){
         // Notify me!
@@ -83,3 +93,8 @@ gulp.task('scripts', copyScripts);
 gulp.task('clean', function(){
   return del('www/build');
 });
+
+// Add a task to render the output
+gulp.task('list', taskListing);
+
+gulp.task('default', ['build']);
