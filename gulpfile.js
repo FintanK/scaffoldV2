@@ -36,11 +36,6 @@ gulp.task('build:before', ['csscomb', 'build']);
 var shouldWatch = argv.indexOf('-l') > -1 || argv.indexOf('--livereload') > -1;
 gulp.task('run:before', [shouldWatch ? 'watch' : 'build']);
 
-// Generate a service worker for offline functionality
-gulp.task('generate-service-worker', ['build'], function() {
-
-});
-
 /**
  * Ionic Gulp tasks, for more information on each see
  * https://github.com/driftyco/ionic-gulp-tasks
@@ -90,6 +85,38 @@ gulp.task('build', ['clean'], function(done){
         notifier.notify({
           title: 'Scaffold',
           message: 'Build complete!',
+          icon: path.join(__dirname, 'www/img/favicon.ico'), // Absolute path (doesn't work on balloons)
+          sound: true, // Only Notification Center or Windows Toasters
+          wait: true // Wait with callback, until user action is taken against notification
+        }, function (err, response) {
+          // Response is response from notification
+        });
+      });
+    }
+  );
+});
+
+// Production build
+gulp.task('production', ['clean'], function(done){
+  runSequence(
+    ['sass', 'html', 'fonts', 'scripts'],
+    function(){
+
+      gulp.start('csscomb');
+      gulp.start('jslint');
+
+      buildBrowserify().on('end', function(){
+
+        // Generate our service worker for the build
+        gulp.src(['www/*/*'])
+        .pipe(gulpServiceWorker({
+          rootDir: 'www/build/js',
+        }));
+
+        // Notify me!
+        notifier.notify({
+          title: 'Scaffold',
+          message: 'Production Build complete!',
           icon: path.join(__dirname, 'www/img/favicon.ico'), // Absolute path (doesn't work on balloons)
           sound: true, // Only Notification Center or Windows Toasters
           wait: true // Wait with callback, until user action is taken against notification
