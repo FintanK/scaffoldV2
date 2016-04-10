@@ -10,6 +10,9 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var argv = process.argv;
 
+// JS Concatenation
+var concat = require('gulp-concat');
+
 // Notifier
 var notifier = require('node-notifier');
 // Path to pull in icon for notifcations
@@ -60,6 +63,13 @@ gulp.task('watch', ['clean'], function(done){
 
       gulpWatch('app/**/*.scss', function(){ gulp.start('sass'); });
       gulpWatch('app/**/*.html', function(){ gulp.start('html'); });
+
+      // Generate our service worker for the build
+      gulp.src(['www/'])
+      .pipe(gulpServiceWorker({
+        rootDir: 'www/build/js',
+      }));
+
       buildBrowserify({ watch: true }).on('end', done);
     }
   );
@@ -67,16 +77,20 @@ gulp.task('watch', ['clean'], function(done){
 
 gulp.task('build', ['clean'], function(done){
   runSequence(
-    ['sass', 'html', 'fonts', 'scripts'],
+    ['sass', 'html', 'fonts', 'scripts', 'csscomb', 'jslint'],
     function(){
-
-      gulp.start('csscomb');
-      gulp.start('jslint');
 
       buildBrowserify().on('end', function(){
 
+        gulp.start('csscomb');
+        gulp.start('jslint');
+        gulp.start('concatcss');
+        gulp.start('minifyprefixcss');
+        gulp.start('copyhtml');
+        gulp.start('minifyhtml');
+
         // Generate our service worker for the build
-        gulp.src(['www/*/*'])
+        gulp.src(['www/'])
         .pipe(gulpServiceWorker({
           rootDir: 'www/build/js',
         }));
@@ -99,11 +113,15 @@ gulp.task('build', ['clean'], function(done){
 // Production build
 gulp.task('production', ['clean'], function(done){
   runSequence(
-    ['sass', 'html', 'fonts', 'scripts'],
+    ['sass', 'html', 'fonts', 'scripts', 'csscomb', 'jslint'],
     function(){
 
       gulp.start('csscomb');
       gulp.start('jslint');
+      gulp.start('concatcss');
+      gulp.start('minifyprefixcss');
+      gulp.start('copyhtml');
+      gulp.start('minifyhtml');
 
       buildBrowserify().on('end', function(){
 

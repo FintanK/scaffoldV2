@@ -39,16 +39,11 @@
 
     // This is the unique name for the cache controlled by this version of the worker.
     get CACHE_NAME() {
-      return this.CACHE_PREFIX + '7e62a50b8cc2905fc88762d149c8a4d5f65097ed';
+      return this.CACHE_PREFIX + 'da39a3ee5e6b4b0d3255bfef95601890afd80709';
     },
 
     // This is a list of resources that will be cached.
     RESOURCES: [
-      './img/build.png', // fdfa8bb68ad638dc0e4722641b6b877b50cd04aa
-      './img/debut_dark.png', // 1aa9049d8993657c38d32ec5340b71430d98f48e
-      './img/favicon.ico', // e49cfff254d4520be27b47c49c22d410285b4141
-      './img/logo.png', // 5656d1a02220e81761374aca174c6412f865700d
-      './img/ticks.png', // 869838d6e318562e4d2a3356fd5b229e3f2076d9
 
     ],
 

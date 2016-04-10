@@ -38,26 +38,26 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Gulp ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Livereload http://livereload.com ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Browserify http://browserify.org ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- SASS http://sass-lang.com/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - CSS Comb http://csscomb.com ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- CSS and JS Concatenation and Minification ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- Automatic CSS Vendor prefixing to support older browers ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- CSS and JS Lints ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- HTML minification for production builds if required. Squeeze every last Kb out of your app. ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Docker configurations so you can spin up a container for this project easily (runDocker.sh script to automate the process)
 - Karma Test Runner https://karma-runner.github.io/0.13/index.html
 - Functional / Behavioural Tests
-- CSS lint
-- JSLint ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Travis configurations to automate and test builds before deployment ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Editorconfig for code styling http://editorconfig.org/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Auto generated cache manifest file (**Note** This has now been replaced by an offline service worker for providing an offline experience first. This is now better web practice as cache manifest files can be tricky to manage for different sites http://alistapart.com/article/application-cache-is-a-douchebag) ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
-- Asset concatenation and minification
-- HTML minification for production builds if required. Squeeze every last Kb out of your app.
-- SASS http://sass-lang.com/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Further compression of assets using express in gzip format
 - Development and production builds with a watcher to kick off builds when changes are made in development
 - Native notification when builds are completed. ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
-- Builds run against pagespeed for feedback on app performance
+- Builds run against pagespeed for feedback on app performance ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Favicons, IOS splash / homescreen icons, Android icons and Windows 8 Tile Icons auto-generated.
 - Manifest.json generated automatically.
 - System.js for module loading
-- Build jobs to allow you to test on different devices in the cloud
+- Build jobs to allow you to test on different devices in the cloud.
 - Heroku deployments configuration
 - Phonegap build task.
 - Gulp task listing (just type 'gulp list') ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
@@ -77,11 +77,32 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 
 # Directory structure
 
-> coming soon
-
-# Config files
-
-> Coming soon
+.
++-- app
++-- gulp-tasks
+|   +-- css-tasks.js
+|   +-- html-tasks.js
+|   +-- img-tasks.js
+|   +-- js-tasks.js
+|   +-- performance-tasks.js
++-- hooks
++-- platforms
++-- plugins
++-- resources
++-- www
++-- .csscomb.json
++-- .csslintrc
++-- .editorconfig
++-- .gitattributes
++-- .gitignore
++-- .npmignore
++-- .travis.yml
++-- config.xml
++-- gulpfile.js
++-- index.html
++-- ionic.config.json
++-- package.json
++-- README.md
 
 # Installation
 
