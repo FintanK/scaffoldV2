@@ -15,6 +15,9 @@ var notifier = require('node-notifier');
 // Path to pull in icon for notifcations
 var path = require('path');
 
+// Gulp service worker
+var gulpServiceWorker = require('gulp-serviceworker');
+
 // Load our modular gulp tasks from
 var requireDir = require('require-dir');
 var tasks = requireDir('./gulp-tasks');
@@ -32,6 +35,11 @@ gulp.task('build:before', ['csscomb', 'build']);
 // We want to 'watch' when livereloading
 var shouldWatch = argv.indexOf('-l') > -1 || argv.indexOf('--livereload') > -1;
 gulp.task('run:before', [shouldWatch ? 'watch' : 'build']);
+
+// Generate a service worker for offline functionality
+gulp.task('generate-service-worker', ['build'], function() {
+
+});
 
 /**
  * Ionic Gulp tasks, for more information on each see
@@ -71,6 +79,13 @@ gulp.task('build', ['clean'], function(done){
       gulp.start('jslint');
 
       buildBrowserify().on('end', function(){
+
+        // Generate our service worker for the build
+        gulp.src(['www/*/*'])
+        .pipe(gulpServiceWorker({
+          rootDir: 'www/build/js',
+        }));
+
         // Notify me!
         notifier.notify({
           title: 'Scaffold',

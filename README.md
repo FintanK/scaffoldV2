@@ -46,7 +46,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - JSLint ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Travis configurations to automate and test builds before deployment ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Editorconfig for code styling http://editorconfig.org/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
-- Auto generated manifest file
+- Auto generated cache manifest file (**Note** This has now been replaced by an offline service worker for providing an offline experience first. This is now better web practiceas cache manifest files can be tricky to manage for different sites http://alistapart.com/article/application-cache-is-a-douchebag) ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Asset concatenation and minification
 - HTML minification for production builds if required. Squeeze every last Kb out of your app.
 - SASS http://sass-lang.com/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
