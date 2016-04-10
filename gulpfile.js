@@ -33,7 +33,7 @@ var tasks = requireDir('./gulp-tasks');
 gulp.task('serve:before', ['watch']);
 gulp.task('emulate:before', ['build']);
 gulp.task('deploy:before', ['build']);
-gulp.task('build:before', ['csscomb', 'build']);
+gulp.task('build:before', ['build']);
 
 // We want to 'watch' when livereloading
 var shouldWatch = argv.indexOf('-l') > -1 || argv.indexOf('--livereload') > -1;
@@ -77,7 +77,7 @@ gulp.task('watch', ['clean'], function(done){
 
 gulp.task('build', ['clean'], function(done){
   runSequence(
-    ['sass', 'html', 'fonts', 'scripts', 'csscomb', 'jslint'],
+    ['sass', 'html', 'fonts', 'scripts'],
     function(){
 
       buildBrowserify().on('end', function(){
@@ -113,7 +113,7 @@ gulp.task('build', ['clean'], function(done){
 // Production build
 gulp.task('production', ['clean'], function(done){
   runSequence(
-    ['sass', 'html', 'fonts', 'scripts', 'csscomb', 'jslint'],
+    ['sass', 'html', 'fonts', 'scripts'],
     function(){
 
       gulp.start('csscomb');
