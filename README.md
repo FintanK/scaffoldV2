@@ -111,11 +111,21 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 
 # Installation
 
+> npm install -g gulp
+> npm install -g ionic@beta
 > npm install -g protractor
+> npm install -g cordova
 
 # Command Line
 
-> coming soon
+The majority of build related tasks are executed using the gulp cli tool.
+For a full list of available commands enter..
+
+> gulp list
+
+The ionic cli tool is also of course available. For a full list of available commands..
+
+> ionic -h
 
 # Protractor Tests
 
