@@ -1,5 +1,8 @@
 var gulp = require('gulp');
 
+// Karma Server for our tests
+var Server = require('karma').Server;
+
 // Lists tasks set up for Gulp
 var taskListing = require('gulp-task-listing');
 
@@ -25,6 +28,9 @@ var gulpServiceWorker = require('gulp-serviceworker');
 var requireDir = require('require-dir');
 var tasks = requireDir('./gulp-tasks');
 
+// Protractor for gulp
+var protractor = require("gulp-protractor").protractor;
+
 /**
  * Ionic hooks
  * Add ':before' or ':after' to any Ionic project command name to run the specified
@@ -33,7 +39,6 @@ var tasks = requireDir('./gulp-tasks');
 gulp.task('serve:before', ['watch']);
 gulp.task('emulate:before', ['build']);
 gulp.task('deploy:before', ['build']);
-gulp.task('build:before', ['build']);
 
 // We want to 'watch' when livereloading
 var shouldWatch = argv.indexOf('-l') > -1 || argv.indexOf('--livereload') > -1;
@@ -54,21 +59,12 @@ var copyFonts = require('ionic-gulp-fonts-copy');
 var copyScripts = require('ionic-gulp-scripts-copy');
 
 gulp.task('watch', ['clean'], function(done){
-  runSequence(
-    ['sass', 'html', 'fonts', 'scripts'],
+  runSequence('sass', 'html', 'fonts', 'scripts', 'csscomb', 'jslint',
+  'concatcss', 'minifyprefixcss', 'copyhtml', 'minifyhtml', 'service-worker',
     function(){
 
-      gulp.start('csscomb');
-      gulp.start('jslint');
-
-      gulpWatch('app/**/*.scss', function(){ gulp.start('sass'); });
-      gulpWatch('app/**/*.html', function(){ gulp.start('html'); });
-
-      // Generate our service worker for the build
-      gulp.src(['www/'])
-      .pipe(gulpServiceWorker({
-        rootDir: 'www/build/js',
-      }));
+      gulpWatch('app/**/*.scss', function(){ gulp.start('sass', 'csscomb', 'minifyprefixcss'); });
+      gulpWatch('app/**/*.html', function(){ gulp.start('html', 'copyhtml', 'minifyhtml'); });
 
       buildBrowserify({ watch: true }).on('end', done);
     }
@@ -76,24 +72,11 @@ gulp.task('watch', ['clean'], function(done){
 });
 
 gulp.task('build', ['clean'], function(done){
-  runSequence(
-    ['sass', 'html', 'fonts', 'scripts'],
+  runSequence('sass', 'html', 'fonts', 'scripts', 'csscomb', 'jslint',
+  'concatcss', 'minifyprefixcss', 'copyhtml', 'minifyhtml', 'service-worker',
     function(){
 
       buildBrowserify().on('end', function(){
-
-        gulp.start('csscomb');
-        gulp.start('jslint');
-        gulp.start('concatcss');
-        gulp.start('minifyprefixcss');
-        gulp.start('copyhtml');
-        gulp.start('minifyhtml');
-
-        // Generate our service worker for the build
-        gulp.src(['www/'])
-        .pipe(gulpServiceWorker({
-          rootDir: 'www/build/js',
-        }));
 
         // Notify me!
         notifier.notify({
@@ -112,8 +95,8 @@ gulp.task('build', ['clean'], function(done){
 
 // Production build
 gulp.task('production', ['clean'], function(done){
-  runSequence(
-    ['sass', 'html', 'fonts', 'scripts'],
+  runSequence('sass', 'html', 'fonts', 'scripts', 'csscomb', 'jslint',
+  'concatcss', 'minifyprefixcss', 'copyhtml', 'minifyhtml', 'service-worker',
     function(){
 
       gulp.start('csscomb');
@@ -156,5 +139,24 @@ gulp.task('clean', function(){
 
 // Add a task to render the output
 gulp.task('list', taskListing);
+
+/**
+ * Run test once and exit
+ */
+gulp.task('test:karma', function (done) {
+  new Server({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done).start();
+});
+
+gulp.task('test:protractor', function (done) {
+  gulp.src(["./tests/*.js"])
+    .pipe(protractor({
+        configFile: "protractor.config.js",
+        args: ['--baseUrl', 'http://localhost:8101']
+    }))
+    .on('error', function(e) { });
+});
 
 gulp.task('default', ['build']);

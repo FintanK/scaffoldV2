@@ -34,6 +34,6 @@ gulp.task('minifyprefixcss', function () {
   // Minify and Autoprefix our styles
   gulp.src('www/build/css/*.css')
   .pipe(minifyCSS())
-  .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
+  // .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
   .pipe(gulp.dest('www/build/css/'));
 });

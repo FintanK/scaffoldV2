@@ -56,7 +56,8 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Builds run against pagespeed for feedback on app performance ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Favicons, IOS splash / homescreen icons, Android icons and Windows 8 Tile Icons auto-generated.
 - Manifest.json generated automatically.
-- System.js for module loading
+- Protractor for testing ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- Karma and Jasmine ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Build jobs to allow you to test on different devices in the cloud.
 - Heroku deployments configuration
 - Phonegap build task.
@@ -89,6 +90,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
     +-- platforms
     +-- plugins
     +-- resources
+    +-- tests
     +-- www
     +-- .csscomb.json
     +-- .csslintrc
@@ -101,16 +103,48 @@ This project will be published as an NPM module and Yeoman generator to allow fo
     +-- gulpfile.js
     +-- index.html
     +-- ionic.config.json
+    +-- karma.conf.js
     +-- package.json
+    +-- protractor.config.js
     +-- README.md
 
 # Installation
 
+> npm install -g protractor
+
+# Command Line
+
 > coming soon
 
-# Command Line Tools
+# Protractor Tests
 
-> coming soon
+Install Protractor globally on your system
+
+> npm install -g protractor
+
+The webdriver-manager is a helper tool to easily get an instance of a Selenium Server running. Use it to download the necessary binaries with:
+
+> webdriver-manager update
+
+And start the selenium server with..
+
+> webdriver-manager start
+
+Ensure the Selenium server is running and the below command should execute the protractor specs.
+
+> gulp test:protractor
+
+# Karma Tests
+
+Install Karma globally on your system
+
+> npm install -g karma
+
+You can then run your tests with
+
+> gulp test:karma
+
+
 
 # License
 
@@ -125,6 +159,8 @@ http://code.tutsplus.com/tutorials/build-your-own-yeoman-generator--cms-20040
 http://lab.ionic.io/
 http://www.gajotres.net/ionic-2-tutorial-lets-create-our-first-application/
 http://ionic.io/products/creator
+https://angular.github.io/protractor/#/
+
 
 ![](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/ANGULAR%202.png)
 ![](http://ionicframework.com/img/ionic-logo-blue.svg)

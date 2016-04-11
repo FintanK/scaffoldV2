@@ -4,13 +4,13 @@ var copy = require('copy');
 
 
 gulp.task('copyhtml', function (cb) {
-  copy.each(['index.html'], 'www', function(err, files) {
-    // exposes the vinyl `files` created when the files are copied
+  return copy.each(['index.html'], 'www', function(err, files) {
+    
   });
 });
 
 gulp.task('minifyhtml', function() {
-  gulp.src('www/*.html')
+  return gulp.src('www/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('www'));
 });

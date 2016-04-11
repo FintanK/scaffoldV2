@@ -1,10 +1,14 @@
 language: node_js
 node_js:
-  - "5.1"
+  - "0.10"
 before_install:
   -  gem install sass
   -  npm cache -f clean
   -  npm install -g ionic@beta
   -  npm install -g cordova
+before_install:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
 install: npm install
+script: node_modules/karma/bin/karma start my.conf.js --single-run
 before_script: ionic build
