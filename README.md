@@ -44,10 +44,9 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Automatic CSS Vendor prefixing to support older browers ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - CSS and JS Lints ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - HTML minification for production builds if required. Squeeze every last Kb out of your app. ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
-- Docker configurations so you can spin up a container for this project easily (runDocker.sh script to automate the process)
+- Docker configurations so you can spin up a container for this project easily (runDocker.sh script to automate the process) https://www.docker.com
 - Karma Test Runner https://karma-runner.github.io/0.13/index.html
-- Functional / Behavioural Tests
-- Travis configurations to automate and test builds before deployment ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- Travis configurations to automate and test builds before deployment http://travis-ci.org ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Editorconfig for code styling http://editorconfig.org/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Auto generated cache manifest file (**Note** This has now been replaced by an offline service worker for providing an offline experience first. This is now better web practice as cache manifest files can be tricky to manage for different sites http://alistapart.com/article/application-cache-is-a-douchebag) ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Further compression of assets using express in gzip format
@@ -56,11 +55,11 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Builds run against pagespeed for feedback on app performance ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Favicons, IOS splash / homescreen icons, Android icons and Windows 8 Tile Icons auto-generated.
 - Manifest.json generated automatically.
-- Protractor for testing ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
-- Karma and Jasmine ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- Protractor for Testing https://angular.github.io/protractor/#/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- Karma and Jasmine Testing https://karma-runner.github.io/0.13/index.html http://jasmine.github.io ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Build jobs to allow you to test on different devices in the cloud.
-- Heroku deployments configuration
-- Phonegap build task.
+- Heroku deployments configuration https://build.phonegap.com
+- Phonegap build task. https://build.phonegap.com
 - Gulp task listing (just type 'gulp list') ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 
 # What I'm excited about
