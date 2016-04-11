@@ -6,9 +6,8 @@ before_install:
   -  npm cache -f clean
   -  npm install -g ionic@beta
   -  npm install -g cordova
-before_install:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+  -  export DISPLAY=:99.0
+  -  sh -e /etc/init.d/xvfb start
 install: npm install
 script: node_modules/karma/bin/karma start my.conf.js --single-run
 before_script: ionic build
