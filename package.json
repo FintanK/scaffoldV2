@@ -23,9 +23,7 @@
     "psi": "^2.0.3",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
-    "zone.js": "0.6.6"
-  },
-  "devDependencies": {
+    "zone.js": "0.6.6",
     "del": "2.2.0",
     "gulp": "3.9.1",
     "gulp-concat-css": "^2.2.0",
@@ -40,9 +38,6 @@
     "ionic-gulp-sass-build": "^1.0.0",
     "ionic-gulp-scripts-copy": "^1.0.0",
     "jshint": "^2.9.1",
-    "karma": "^0.13.22",
-    "karma-firefox-launcher": "^0.1.7",
-    "karma-jasmine": "^0.3.8",
     "require-dir": "^0.3.0",
     "run-sequence": "1.1.5"
   },
