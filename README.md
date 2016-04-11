@@ -2,14 +2,14 @@
 
 The web changes a lot in a year!
 
-**Note:** Angular 2 is in Beta right now. Things can and probably will be refactored later.
+**Note:** Angular 2 and Ionic 2 are in Beta right now. Things can and probably will be refactored later.
 
 Scaffold V2 is completely re-written from the ground up to use Angular 2 as well as harnessing Ionic 2.
 The project aims to follow best practices in frontend web development with a component based approach, comprehensive testing (Unit and Behavioural) and the optimization of frontend assets through the proven techniques of concatentation. minification and compression.
 
 There will be automated processes to ensure that your project's data is as contextual as possible both in the domain of semantic markup and data as well as platform integration out of the box. The web isn't just in the browser anymore.
 
-Template configurations are also included to allow you to easily set up things like docker container and provision all of your necessary dependencies for build tools and deployments.
+Template configurations are also included to allow you to easily set up things like docker containers, Travis CI buils, IDE configurations and code quality tools.
 
 This project will be published as an NPM module and Yeoman generator to allow for modularity and reusability. The generator will contain options for customizing the architecture of your application.
 
