@@ -1,5 +1,7 @@
 # Scaffold JS 2.0 (Work in progress)
 
+[![Build Status](https://travis-ci.org/FintanK/scaffoldV2.svg?branch=master)](https://travis-ci.org/FintanK/scaffoldV2)
+
 The web changes a lot in a year!
 
 **Note:** Angular 2 and Ionic 2 are in Beta right now. Things can and probably will be refactored later.
