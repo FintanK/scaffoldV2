@@ -1,6 +1,20 @@
 {
-  "name": "scaffold",
+  "name": "generator-scaffold",
   "version": "2.0.0",
+  "description": "Scaffold",
+  "author": "Fintan Kearney",
+  "homepage": "http://fintankearney.ie",
+  "scripts": {
+    "test:karma": "gulp test:karma",
+    "test:protractor": "gulp test:protractor"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FintanK/scaffoldV2"
+  },
   "dependencies": {
     "angular2": "2.0.0-beta.13",
     "copy": "^0.2.0",
@@ -57,6 +71,5 @@
       "locator": "ios"
     },
     "android"
-  ],
-  "description": "Scaffold"
+  ]
 }
