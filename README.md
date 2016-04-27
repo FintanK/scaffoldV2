@@ -64,7 +64,6 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Angular 2! Improved and intuitive templating with better code completion in your IDE.
 - Ionic 2! Build apps for Android and IOS with web technologies.
 - Ionic Native! Only add the components you need.
-- Docker! Spin up a container quickly. Use for development or quick deployments.
 - Phonegap build! Take the hassle out of packaging your app for the Google Play and/or the IOS app store.
 - Builds using Travis! Automate builds and tests for every change ensuring code quality into the future.
 - Web Components!
@@ -169,9 +168,9 @@ http://lab.ionic.io/
 http://www.gajotres.net/ionic-2-tutorial-lets-create-our-first-application/
 http://ionic.io/products/creator
 https://angular.github.io/protractor/#/
+https://angular.github.io/protractor/#/
 
 
 ![](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/ANGULAR%202.png)
 ![](http://ionicframework.com/img/ionic-logo-blue.svg)
-![](https://raw.githubusercontent.com/micromata/generator-bootstrap-kickstart/master/yeoman.png)
 ![](https://www.npmjs.com/static/images/npm-logo.svg)
