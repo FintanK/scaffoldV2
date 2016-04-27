@@ -1,5 +1,5 @@
 {
-  "name": "generator-scaffold",
+  "name": "generator-scaffold-web",
   "version": "2.0.0",
   "description": "Scaffold",
   "author": "Fintan Kearney",
@@ -9,7 +9,11 @@
     "test:protractor": "gulp test:protractor"
   },
   "keywords": [
-    "yeoman-generator"
+    "angular",
+    "karma",
+    "protractor",
+    "sass",
+    "ionic"
   ],
   "repository": {
     "type": "git",

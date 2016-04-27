@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/FintanK/scaffoldV2.svg?branch=master)](https://travis-ci.org/FintanK/scaffoldV2)
 
+NPM Module http://www.npmjs.com/package/generator-scaffold-web
+
 The web changes a lot in a year!
 
 **Note:** Angular 2 and Ionic 2 are in Beta right now. Things can and probably will be refactored later.
