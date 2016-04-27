@@ -75,5 +75,9 @@
       "locator": "ios"
     },
     "android"
-  ]
+  ],
+  "devDependencies": {
+    "gulp-sass": "^2.2.0",
+    "node-sass": "^3.4.2"
+  }
 }

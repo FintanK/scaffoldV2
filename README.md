@@ -124,6 +124,10 @@ The ionic cli tool is also of course available. For a full list of available com
 
 > ionic -h
 
+# Running the application
+
+> ionic serve
+
 # Protractor Tests
 
 Install Protractor globally on your system

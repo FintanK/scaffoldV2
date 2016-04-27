@@ -3,11 +3,13 @@ var gulp = require('gulp');
 // Pagespeed module
 var psi = require('psi');
 
+// Gulp service worker
+var gulpServiceWorker = require('gulp-serviceworker');
+
 
 gulp.task('service-worker', function(){
   // Generate our service worker for the build
-  gulp.src(['www/'])
-  .pipe(gulpServiceWorker({
+  return gulp.src(['www/**/*']).pipe(gulpServiceWorker({
     rootDir: 'www/build/js',
   }));
 });

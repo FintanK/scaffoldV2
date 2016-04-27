@@ -10,6 +10,7 @@
   <link ios-href="build/css/app.ios.css" rel="stylesheet">
   <link md-href="build/css/app.md.css" rel="stylesheet">
   <link wp-href="build/css/app.wp.css" rel="stylesheet">
+  <link wp-href="build/css/custom.css" rel="stylesheet">
 
     <!-- IE -->
   <meta http-equiv="Page-Enter" content="RevealTrans(Duration=2.0,Transition=2)">
@@ -87,9 +88,11 @@
   <meta name="DC.relation" content="/meta-tags/">
   <meta name="DC.coverage" content="World">
 
-  <link rel="manifest" href="manifest.webmanifest">
+  <!-- Bootstrap (Temporary: will be added to prject dependencies ) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 </head>
-<body manifest="manifest.appcache" class="platform-android platform-cordova platform-webview">
+<body class="platform-android platform-cordova platform-webview">
 
   <!-- this Ionic's root component and where the app will load -->
   <ion-app></ion-app>
@@ -100,5 +103,8 @@
   <script src="build/js/angular2-polyfills.js"></script>
   <!-- the bundle which is built from the app's source code -->
   <script src="build/js/app.bundle.js"></script>
+
+  <!-- Our offline service worker -->
+  <script src="build/js/offline-worker.js"></script>
 </body>
 </html>

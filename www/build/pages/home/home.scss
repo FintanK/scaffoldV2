@@ -1,0 +1,89 @@
+@media (min-width: 1200px) {
+  /* Overriding default bootstrap width */
+  .container {
+    width: 700px !important;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  nav ul {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) {
+  nav ul {
+    margin-top: 35px;
+  }
+}
+
+div.feature-desc {
+  text-align:center;
+  padding: 20px 0px;
+}
+#welcome {
+  background:url("../../img/ticks.png") repeat;
+  padding-bottom: 55px;
+}
+#features {
+  background:url("../../img/debut_dark.png") repeat;
+  color: #fff;
+  padding: 60px 0px;
+}
+#features .feature-desc h1 {
+  font-size: 30px;
+}
+#features h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+#features p {
+  color: #fff;
+}
+#footer {
+  text-align: center;
+}
+#logo {
+  color: #000;
+  padding-top:20px;
+}
+#logo img {
+  float:left;
+}
+#logo h1 {
+  display: inline;
+  float: left;
+  font-size: 22px;
+  margin: 13px 15px;
+}
+h1 {
+  font-family: 'Open Sans',sans-serif;
+}
+
+nav ul {
+  display:block;
+  list-style: none;
+  float:right;
+}
+nav ul li {
+  display: inline;
+  margin-right:20px;
+}
+nav ul li a {
+  color: #000;
+  font-weight: 500;
+}
+div.promo {
+  text-align:center;
+  padding: 55px 0px;
+}
+div.description {
+  text-align: center;
+  font-size: 19px;
+}
+div.download {
+  padding:20px;
+}
+hr {
+  background: #ccc;
+}
