@@ -43,7 +43,6 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Livereload http://livereload.com ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Browserify http://browserify.org ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - SASS http://sass-lang.com/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
-- CSS Comb http://csscomb.com ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - CSS and JS Concatenation and Minification ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Automatic CSS Vendor prefixing to support older browers ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - CSS and JS Lints ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
@@ -87,7 +86,6 @@ This project will be published as an NPM module and Yeoman generator to allow fo
     +-- resources
     +-- tests
     +-- www
-    +-- .csscomb.json
     +-- .csslintrc
     +-- .editorconfig
     +-- .gitattributes

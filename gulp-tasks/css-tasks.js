@@ -9,19 +9,8 @@ var minifyCSS = require('gulp-minify-css');
 // CSS Auto-prefixing
 var autoprefixer = require('gulp-autoprefixer');
 
-// CSS Comb
-var Comb = require('csscomb');
-var comb = new Comb('zen');
-
 // CSS Concatenation
 var concatCss = require('gulp-concat-css');
-
-// CSS Linting
-
-// Let's comb our CSS and refactor based on our preferences defined in .csscomb.json
-gulp.task('csscomb', function(){
-  comb.processPath('www/build/css');
-});
 
 // Here we will concatenate any custom stylesheets into one file that will be minimized later
 gulp.task('concatcss', function () {

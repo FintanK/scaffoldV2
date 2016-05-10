@@ -55,11 +55,11 @@ var copyFonts = require('ionic-gulp-fonts-copy');
 var copyScripts = require('ionic-gulp-scripts-copy');
 
 gulp.task('watch', ['clean'], function(done){
-  runSequence('sass', 'fonts', 'copyimages', 'scripts', 'csscomb', 'jslint',
+  runSequence('sass', 'fonts', 'copyimages', 'scripts', 'jslint',
   'concatcss', 'minifyprefixcss', 'copycomponents', 'minifyhtml', 'service-worker',
     function(){
 
-      gulpWatch('app/**/*.scss', function(){ gulp.start('sass', 'csscomb', 'minifyprefixcss'); });
+      gulpWatch('app/**/*.scss', function(){ gulp.start('sass', 'minifyprefixcss'); });
       gulpWatch('app/**/*.html', function(){ gulp.start('html', 'minifyhtml'); });
 
       buildBrowserify({ watch: true }).on('end', done);
@@ -68,7 +68,7 @@ gulp.task('watch', ['clean'], function(done){
 });
 
 gulp.task('build', ['clean'], function(done){
-  return runSequence('sass', 'fonts', 'copyimages', 'scripts', 'csscomb', 'jslint',
+  return runSequence('sass', 'fonts', 'copyimages', 'scripts', 'jslint',
   'concatcss', 'minifyprefixcss', 'copycomponents', 'minifyhtml',
     function(){
 
@@ -91,7 +91,7 @@ gulp.task('build', ['clean'], function(done){
 
 // Production build
 gulp.task('production', ['clean'], function(done){
-  return runSequence('sass', 'fonts', 'copyimages', 'scripts', 'csscomb', 'jslint',
+  return runSequence('sass', 'fonts', 'copyimages', 'scripts', 'jslint',
   'concatcss', 'minifyprefixcss', 'copycomponents', 'minifyhtml', 'service-worker',
     function(){
 
