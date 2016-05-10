@@ -59,6 +59,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Protractor for Testing https://angular.github.io/protractor/#/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Karma and Jasmine Testing https://karma-runner.github.io/0.13/index.html http://jasmine.github.io ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Gulp task listing (just type 'gulp list') ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- Sitemap generation ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 
 # What I'm excited about
 - Angular 2! Improved and intuitive templating with better code completion in your IDE.

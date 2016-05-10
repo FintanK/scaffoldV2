@@ -1,5 +1,9 @@
 var gulp = require('gulp');
 
+// Sitemap generator
+var sm = require('sitemap')
+    , fs = require('fs');
+
 // Karma Server for our tests
 var Server = require('karma').Server;
 
@@ -69,7 +73,7 @@ gulp.task('watch', ['clean'], function(done){
 
 gulp.task('build', ['clean'], function(done){
   return runSequence('sass', 'fonts', 'copyimages', 'scripts', 'jslint',
-  'concatcss', 'minifyprefixcss', 'copycomponents', 'minifyhtml',
+  'concatcss', 'minifyprefixcss', 'copycomponents', 'minifyhtml', 'generate-sitemap',
     function(){
 
       buildBrowserify().on('end', function(){
@@ -92,7 +96,7 @@ gulp.task('build', ['clean'], function(done){
 // Production build
 gulp.task('production', ['clean'], function(done){
   return runSequence('sass', 'fonts', 'copyimages', 'scripts', 'jslint',
-  'concatcss', 'minifyprefixcss', 'copycomponents', 'minifyhtml', 'service-worker',
+  'concatcss', 'minifyprefixcss', 'copycomponents', 'minifyhtml', 'generate-sitemap', 'service-worker',
     function(){
 
       buildBrowserify().on('end', function(){
