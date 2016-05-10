@@ -50,6 +50,7 @@ This project will be published as an NPM module and Yeoman generator to allow fo
 - Travis configurations to automate and test builds before deployment http://travis-ci.org ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Editorconfig for code styling http://editorconfig.org/ ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Auto generated cache manifest file (**Note** This has now been replaced by an offline service worker for providing an offline experience first. This is now better web practice as cache manifest files can be tricky to manage for different sites http://alistapart.com/article/application-cache-is-a-douchebag) ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
+- Manifest.json file ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Further compression of assets using express in gzip format (To do)
 - Development and production builds with a watcher to kick off builds when changes are made in development ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)
 - Native notification when builds are completed. ![](http://www.industrysalestax.com/images/green_checkmark_small.gif)

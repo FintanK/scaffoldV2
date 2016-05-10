@@ -1,0 +1,19 @@
+{
+  "short_name": "Scaffold",
+  "name": "A web developer framework by Fintan Kearney",
+  "icons": [
+    {
+      "src": "/build/img/logo.png",
+      "sizes": "68x54",
+      "type": "image/png"
+    },
+    {
+      "src": "/build/img/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/ico"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape"
+}
