@@ -124,6 +124,15 @@ The ionic cli tool is also of course available. For a full list of available com
 
 > ionic -h
 
+# Adding builds for IOS and Android
+
+On IOS
+
+> npm install -g ios-sim
+
+> ionic platform add ios
+> ionic platform add android
+
 # Running the application
 
 > ionic serve
