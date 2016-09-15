@@ -1,4 +1,6 @@
-# Scaffold JS 2.0 (Work in progress)
+# Scaffold JS 2.0 
+
+**NO LONGER BEING MAINTAINED**
 
 [![Build Status](https://travis-ci.org/FintanK/scaffoldV2.svg?branch=master)](https://travis-ci.org/FintanK/scaffoldV2)
 
