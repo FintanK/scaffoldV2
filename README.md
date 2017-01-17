@@ -1,7 +1,5 @@
 # Scaffold JS 2.0 
 
-**NO LONGER BEING MAINTAINED**
-
 [![Build Status](https://travis-ci.org/FintanK/scaffoldV2.svg?branch=master)](https://travis-ci.org/FintanK/scaffoldV2)
 
 NPM Module http://www.npmjs.com/package/generator-scaffold-web
@@ -135,15 +133,14 @@ On IOS
 > ionic platform add ios
 > ionic platform add android
 
+
+
 # Running the application
 
 > ionic serve
 
+
 # Protractor Tests
-
-Install Protractor globally on your system
-
-> npm install -g protractor
 
 The webdriver-manager is a helper tool to easily get an instance of a Selenium Server running. Use it to download the necessary binaries with:
 
@@ -156,6 +153,7 @@ And start the selenium server with..
 Ensure the Selenium server is running and the below command should execute the protractor specs.
 
 > gulp test:protractor
+
 
 # Karma Tests
 
@@ -174,18 +172,50 @@ You can then run your tests with
 This source code has a MIT License.
 
 # Further potential and reading Material
+
+Build your first Web OS TV App
 https://developer.lge.com/webOSTV/develop/web-app/getting-started/building-your-first-web-app-webos-tv/
+
+Mozilla Packaged Apps
 https://developer.mozilla.org/en-US/Marketplace/Options/Packaged_apps
+
+Chrome Apps
 https://developer.chrome.com/apps/about_apps
+
+Authoring Yeoman Generators
 http://yeoman.io/authoring/
 http://code.tutsplus.com/tutorials/build-your-own-yeoman-generator--cms-20040
+
+Ionic Lab
 http://lab.ionic.io/
+
+Ionic 2 Beginner utorial
 http://www.gajotres.net/ionic-2-tutorial-lets-create-our-first-application/
+
+Ionic Creator
 http://ionic.io/products/creator
-https://angular.github.io/protractor/#/
-https://angular.github.io/protractor/#/
 
 
-![](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/ANGULAR%202.png)
+Protractor Documentation
+https://angular.github.io/protractor/#/
+
+Instanbul (Test Coverage)
+https://github.com/gotwarlost/istanbul
+
+Deployments from Cloud9 IDE (I use this for my personal projects)
+https://docs.c9.io/docs/deploying-via-cli
+
+Cloud9 Running an Ionic App
+https://community.c9.io/t/running-a-ionic-2-application/3965
+
+
 ![](http://ionicframework.com/img/ionic-logo-blue.svg)
 ![](https://www.npmjs.com/static/images/npm-logo.svg)
+
+
+## TO DO
+
+- Offline first verification and tests
+- Testing across as many platforms as possible.
+- Demo functionality: NPM task to clear files.
+- CLI generator integration.
