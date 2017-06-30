@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/FintanK/scaffoldV2.svg?branch=master)](https://travis-ci.org/FintanK/scaffoldV2)
 
-** I am no longer maintaining this repo. Scaffold V3 is on the way! React.js, Typescript, Electron and Cordova ;) **
+** I am no longer maintaining this repo. Scaffold V3 is on the way! **
 
 NPM Module http://www.npmjs.com/package/generator-scaffold-web
 
