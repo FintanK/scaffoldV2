@@ -221,3 +221,13 @@ https://community.c9.io/t/running-a-ionic-2-application/3965
 - Testing across as many platforms as possible.
 - Demo functionality: NPM task to clear files.
 - CLI generator integration.
+
+## Donate
+
+Find this repo useful? Show your appreciation.
+
+```
+Bitcoin: 1GkFczi2q494npKgH33w9UVkM6UGe4pUea
+Ethereum: 0xACBC96E4c7556dA6e78B85D6d6f0934A9Ff0d9F7
+Litecoin: LdkbEPzQCnVABZzYEmVHJyM2dYJddqZcVZ
+```
